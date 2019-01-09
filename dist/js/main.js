@@ -34,3 +34,9 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+/* // Gets date and returns diffrent background img based on months
+let datePic = new Date().getMonth();
+if(datePic > 10 || (datePic >= 0 && datePic < 2)) {
+  //show background winter.jpg
+}
+else if(datePic >= 2 && datePic < ) */
