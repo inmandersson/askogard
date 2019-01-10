@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -183,12 +183,34 @@ main {
     padding: 0.5 rem;
     border-bottom: #418836 5px solid; }
 
+.prod-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "prodimage meat meat";
+  grid-template-columns: repeat(3, 1fr); }
+  .prod-info .prod-image {
+    grid-area: prodimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #418836 3px solid; }
+  .prod-info .meatBox {
+    grid-area: meat;
+    font-size: 1.5 rem; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #393838;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .icons a:nth-last-of-type(1) {
+    visibility: hidden; } }
+
+@media screen and (min-width: 769) and (max-width: 1170px) {
+  .icons a:nth-last-of-type(1) {
+    visibility: hidden; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -218,6 +240,9 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .prod-info {
+    grid-template-areas: "prodimage" "meat";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {

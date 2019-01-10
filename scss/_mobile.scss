@@ -1,9 +1,15 @@
 //Widescreens
 @include mediaXl {
+  .icons a:nth-last-of-type(1) {
+    visibility: hidden;
+  }
 }
 
 // Desktops and Laptops
 @include mediaLg {
+  .icons a:nth-last-of-type(1) {
+    visibility: hidden;
+  }
 }
 
 //Tablets
@@ -50,6 +56,13 @@
       "job1"
       "job2"
       "job3";
+    grid-template-columns: 1fr;
+  }
+
+  .prod-info {
+    grid-template-areas:
+      "prodimage"
+      "meat";
     grid-template-columns: 1fr;
   }
 }

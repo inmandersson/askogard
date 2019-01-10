@@ -109,6 +109,24 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 }
+.prod-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "prodimage meat meat";
+
+  grid-template-columns: repeat(3, 1fr);
+
+  .prod-image {
+    grid-area: prodimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  .meatBox {
+    grid-area: meat;
+    font-size: 1.5 rem;
+  }
+}
 
 #main-footer {
   text-align: center;
