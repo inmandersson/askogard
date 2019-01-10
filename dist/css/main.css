@@ -55,7 +55,7 @@
     .menu-branding .logo {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.png);
+      background: url(/img/portrait.png);
       border-radius: 50%;
       margin-bottom: 1rem;
       border: solid 3px #418836; }
@@ -102,7 +102,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../../dist/img/background.jpeg);
+    background: url(../dist/img/background.jpeg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
